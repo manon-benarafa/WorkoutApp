@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">WorkoutApp</string>
+    <string name="menu_icon_content_description">About WorkoutApp</string>
+    <string name="home_page_content_description">Home Page content description</string>
+    <string name="home_page_navigation_label">Home Page</string>
+    <string name="new_activity_content_description">New Activity content description</string>
+    <string name="new_activity_navigation_label">New Activity</string>
+    <string name="profile_page_content_description">Profile Page content description</string>
+    <string name="profile_page_navigation_label">Profile Page</string>
 </resources>
