@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.epfl.esl.workoutapp"
-    compileSdk = 36
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.epfl.esl.workoutapp"
-        minSdk = 28
-        targetSdk = 36
+        minSdk = 25
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -51,8 +51,13 @@ dependencies {
     implementation(libs.androidx.wear.tooling.preview)
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.core.splashscreen)
+//    implementation(libs.androidx.constraintlayout)
+//    implementation(libs.androidx.material3.android)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
+    implementation("com.google.android.gms:play-services-wearable:18.1.0")
+    implementation("androidx.compose.runtime:runtime-livedata:1.5.4")
 }
