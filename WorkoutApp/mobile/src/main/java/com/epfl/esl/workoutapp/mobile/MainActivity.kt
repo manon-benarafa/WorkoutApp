@@ -196,11 +196,19 @@ class MainActivity : ComponentActivity() {
                                     )
                                 }
 
-                                composable("homePage") {
+                                composable("home") {
 
                                 }
+                                composable("new_activity") {
 
-                                composable("profilePage") {
+                                }
+                                composable("profile") {
+
+                                }
+                                composable("settings") {
+
+                                }
+                                composable("activity") {
 
                                 }
                             }

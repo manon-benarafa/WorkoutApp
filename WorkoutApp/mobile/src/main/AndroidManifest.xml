@@ -5,6 +5,11 @@
     <uses-sdk android:targetSdkVersion="33" android:minSdkVersion="23"
         tools:overrideLibrary="co.yml.charts.components"/>
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BODY_SENSORS"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,6 +20,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WorkoutApp"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="<YOUR_MAP_API_KEY>" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
